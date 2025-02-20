@@ -1,0 +1,42 @@
+[project]
+name = "patternswithcrewai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Abdul Rehman", email = "121764862+KingAbdulRehman@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "crewai>=0.102.0",
+    "litellm>=1.60.2",
+    "python-dotenv>=1.0.1",
+]
+
+[project.scripts]
+patternswithcrewai = "patternswithcrewai:main"
+
+ALRun = "patternswithcrewai.AugmentedLLM:Run"
+ALPlot = "patternswithcrewai.AugmentedLLM:Plot"
+
+PCRun = "patternswithcrewai.PromptChaining:Run"
+PCPlot = "patternswithcrewai.PromptChaining:Plot"
+
+RRun = "patternswithcrewai.Routing:Run"
+RPlot = "patternswithcrewai.Routing:Plot"
+
+PRun = "patternswithcrewai.Parallelization:Run"
+PPlot = "patternswithcrewai.Parallelization:Plot"
+
+OWRun = "patternswithcrewai.OrchestratorWorkers:Run"
+OWPlot = "patternswithcrewai.OrchestratorWorkers:Plot"
+
+EORun = "patternswithcrewai.EvaluatorOptimizer:Run"
+EOPlot = "patternswithcrewai.EvaluatorOptimizer:Plot"
+
+ARun = "patternswithcrewai.Agents:Run"
+APlot = "patternswithcrewai.Agents:Plot"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
