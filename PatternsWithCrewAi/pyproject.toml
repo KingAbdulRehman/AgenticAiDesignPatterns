@@ -6,7 +6,7 @@ readme = "README.md"
 authors = [
     { name = "Abdul Rehman", email = "121764862+KingAbdulRehman@users.noreply.github.com" }
 ]
-requires-python = ">=3.13"
+requires-python = ">=3.11"
 dependencies = [
     "crewai>=0.102.0",
     "litellm>=1.60.2",
